@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		044977B2245FD13C0089F84C /* RandomRGB.h in Headers */ = {isa = PBXBuildFile; fileRef = 044977B0245FD13C0089F84C /* RandomRGB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		044977B9245FD1690089F84C /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044977B8245FD1690089F84C /* RandomColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		044977AD245FD13C0089F84C /* RandomRGB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandomRGB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		044977B0245FD13C0089F84C /* RandomRGB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomRGB.h; sourceTree = "<group>"; };
 		044977B1245FD13C0089F84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044977B8245FD1690089F84C /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				044977B0245FD13C0089F84C /* RandomRGB.h */,
 				044977B1245FD13C0089F84C /* Info.plist */,
+				044977B8245FD1690089F84C /* RandomColor.swift */,
 			);
 			path = RandomRGB;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					044977AC245FD13C0089F84C = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044977B9245FD1690089F84C /* RandomColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		044977B6245FD13C0089F84C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.RandomRGB;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		044977B7245FD13C0089F84C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
